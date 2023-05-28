@@ -1,0 +1,163 @@
+
+
+:root{
+--main-bg: #708090;
+background-color: var(--main-bg);
+  
+}
+* {
+    margin:0;
+    padding:0;
+}
+.container{
+    width:100vw;
+    height:100vh;
+}
+
+.container, .logo-title {
+    display: flex;
+    flex-flow: row wrap;
+}
+.photo-container {
+    background-image:url('photo-1528154291023-a6525fabe5b4.webp');
+    background-position:center;
+    background-size:auto;
+    width:40vw;
+    color:white;
+    font-size:10px;
+}
+.logo-title {
+    position:relative;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+    top:20vh;
+}
+h1 {
+    color: white;
+    font-family: 'Bad Script', cursive;
+    font-weight: bolder;
+    text-shadow: 0 0 30px #315c5c;
+    font-size: 45px;
+}
+
+img {
+width:150px;
+height:150px;
+
+}
+.right-content{
+    width: 60vw;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.right-text{
+    color:white;
+    font-size: 25px;
+    font-family:'Oswald', sans-serif; 
+    margin: 30px;
+}
+.sign{
+    margin-top: 100px;
+}
+.form{
+    display:flex;
+    flex-flow: row wrap;
+    margin-left: 50px;
+    justify-content: flex-start;
+}
+.input {
+    display:flex;
+    flex-flow: column wrap;
+    margin:10px
+}
+label{
+    margin-right:5px;
+    font-size:20px;
+    color:white;
+}
+input{
+    margin-right: 40px;
+    width:18vw;
+    height:20px;
+    
+}
+.account-container {
+    display:flex;
+    justify-content: center;
+    margin:15px;
+}
+.submit {
+    padding:15px;
+    background-color:var(--main-bg);
+    font-size: 18px;
+    font-family: 'Anton', sans-serif;
+    color:white;
+    border-radius: 10px;
+    border:3px solid white;;
+    margin:20px;
+}
+.account-container, a{
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+a {
+color:white;
+}
+input:valid{
+    border: 2px solid green;
+}
+button:hover{
+    cursor:pointer;
+    background-color: #315c5c;
+}
+a:hover{
+    color:#315c5c
+}
+
+
+
+
+
+@media only screen and (max-width:800px) {
+    .container{
+        flex-flow: column wrap;
+        height:auto;
+        text-align:center;
+        
+    }
+    .photo-container{
+        width:100vw;
+        height:20vh;
+        display:flex;
+        background-size: 100vw;
+        justify-content:center;
+    }
+    .logo-title{
+        position: static;
+        height:auto;
+        gap:10px;
+        width:100vw;
+    }
+    h1{
+        font-size:30px;
+        
+    }
+    img {
+        height: 112px;
+        width: 112px;
+    }
+.right-content{
+    display:flex;
+    flex-flow:column wrap;
+    width:auto;
+   
+}
+.submit{
+    margin:8px;
+    margin-top:20px;
+}
+}
